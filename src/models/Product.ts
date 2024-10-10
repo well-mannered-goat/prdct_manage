@@ -22,7 +22,7 @@ class Product extends Model<ProductAttributes, ProductCreationAttributes> implem
 Product.init(
     {
         id: {
-            type: DataTypes.INTEGER.UNSIGNED,
+            type: DataTypes.INTEGER,
             autoIncrement: true,
             primaryKey: true,
         },
