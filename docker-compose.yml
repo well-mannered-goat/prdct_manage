@@ -4,7 +4,7 @@ services:
     image: postgres:latest
     ports:
       - '${DB_PORT}:5432'
-    container_name: dns
+    container_name: products
     restart: always
     environment:
       POSTGRES_USER: ${DB_USER}
