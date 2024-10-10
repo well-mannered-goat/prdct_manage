@@ -17,9 +17,6 @@ class Product extends Model<ProductAttributes, ProductCreationAttributes> implem
     public price!: number;
     public description?: string;
     public category!: string;
-
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
 }
 
 Product.init(
@@ -49,7 +46,7 @@ Product.init(
     {
         sequelize,
         modelName: 'Product',
-        tableName: 'products',
+        tableName: 'product',
         timestamps: true,
     }
 );
